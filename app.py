@@ -15,7 +15,7 @@ external_stylesheets = [
 ]
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
-app = app.server
+server = app.server
 
 app.title = "Pig - Dashboard!"
 
