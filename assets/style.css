@@ -7,8 +7,7 @@ body {
     
     .header {
         background-color: #222222;
-        height: 288px;
-        padding: 16px 0 0 0;
+        height: 100px;
     }
     
     .header-emoji {
@@ -19,18 +18,19 @@ body {
     
     .header-title {
         color: #FFFFFF;
-        font-size: 48px;
+        font-size: 50px;
         font-weight: bold;
-        text-align: center;
-        padding-top: 40px;;
+        text-align: left;
+        padding: 20px 50px 0;
         margin: 0 auto;
     }
     
     .header-description {
         color: #CFCFCF;
-        margin: 4px auto;
-        text-align: center;
+        margin: auto 0 ;
+        text-align: left;
         max-width: 384px;
+        
     }
     
     .wrapper {
@@ -60,12 +60,12 @@ body {
         box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
     }
     .menu-body {
-        height: 112px;
-        width: 912px;
-        display: flex;
+        height: 600px;
+        width: 600px;
+        display: inline-block;
         justify-content: space-evenly;
         padding-top: 24px;
-        margin: 20px auto 0 auto;
+        margin: 20px;
         background-color: #FFFFFF;
         box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
     }
@@ -116,3 +116,4 @@ body {
         font-size: 30px;
         color: #079A82;
     }
+    
