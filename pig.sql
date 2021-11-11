@@ -93,6 +93,7 @@ values
 		('01', '000002');
  		('02', '000003');
 		('02', '000004');
+		('03', '000005');
 
 INSERT INTO Startup (Equipe, Nome, Area, CodStartup)
 values
@@ -145,10 +146,24 @@ values
 		(0,1,2,3,4,5,6),
 		(6,5,4,3,2,1,0),
 		(4,5,6,1,2,3,0);
+	
 
+# Consulta simples
+SELECT Equipe FROM Startup WHERE (Equipe = 'Cannect');
 
+SELECT Nome FROM Startup WHERE (Equipe = 'Cannect');
 
+SELECT * FROM Gestão WHERE (Indicador1 >= 4);
 
+# Order By
+SELECT * FROM Capital ORDER BY Indicador1 ASC;
+SELECT * FROM Capital ORDER BY Indicador1 DESC;
 
+# Seleção com função de agregação Group By
+
+SELECT Programa, MAX(CodAvaliação)FROM Avaliação GROUP BY Programa;
+SELECT Programa, MIN(CodAvaliação)FROM Avaliação GROUP BY Programa;
+
+SELECT Programa, COUNT(*) FROM Avaliação GROUP BY Programa  HAVING COUNT(*) > 1; 
 
 
